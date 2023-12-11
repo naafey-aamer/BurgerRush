@@ -29,8 +29,7 @@ public class addFries : MonoBehaviour
         newObject.SetActive(true); // spawn object above tray
         cookManagerGameFlow.currFries = newObject;
 
-        // gameFlow.plateValue[gameFlow.idx] = foodValue;
-        // gameFlow.idx = gameFlow.idx + 1;
-        // Debug.Log("Array Contents: " + string.Join(", ", gameFlow.plateValue));
+        gameFlow.plateValue[11] = foodValue;
+        Debug.Log("Array Contents: " + string.Join(", ", gameFlow.plateValue));
     }
 }

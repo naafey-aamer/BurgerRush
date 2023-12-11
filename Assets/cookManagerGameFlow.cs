@@ -6,7 +6,7 @@ using TMPro;
 
 public class cookManagerGameFlow : MonoBehaviour
 {
-    
+    public static int cooking = 0; // number of patties currently cooking
     public static int cookedPatties = 0;
     public static GameObject[] stoves = new GameObject[4];
     public static bool[] canRemove = new bool[4];

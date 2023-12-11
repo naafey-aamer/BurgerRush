@@ -29,8 +29,7 @@ public class addDip : MonoBehaviour
         newObject.SetActive(true); // spawn object above plate 
         cookManagerGameFlow.currDip = newObject;
 
-        // gameFlow.plateValue[gameFlow.idx] = foodValue;
-        // gameFlow.idx = gameFlow.idx + 1;
-        // Debug.Log("Array Contents: " + string.Join(", ", gameFlow.plateValue));
+        gameFlow.plateValue[12] = foodValue;
+        Debug.Log("Array Contents: " + string.Join(", ", gameFlow.plateValue));
     }
 }

@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class addToPlate : MonoBehaviour
 {
+    // audio 
+    public AudioSource audioSource;
+
     public GameObject objectToAdd;
     public int foodValue;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        // Get the AudioSource component from the GameObject
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -21,7 +25,7 @@ public class addToPlate : MonoBehaviour
 
     public void OnButtonPress()
     {   
-        if (objectToAdd == GameObject.Find("Patty_Slice")) {
+        if (objectToAdd == GameObject.Find("Patty")) {
             if (cookManagerGameFlow.cookedPatties <= 0) { // no more cooked patties available
                 Debug.Log("No more cooked patties: cook more patties");
                 return;
@@ -38,6 +42,9 @@ public class addToPlate : MonoBehaviour
         gameFlow.plateValue[gameFlow.idx] = foodValue;
         gameFlow.idx = gameFlow.idx + 1;
         Debug.Log("Array Contents: " + string.Join(", ", gameFlow.plateValue));
+
+        // play sound
+        audioSource.Play();
     }
 
 }

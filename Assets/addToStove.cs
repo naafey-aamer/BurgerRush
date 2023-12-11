@@ -6,8 +6,11 @@ using TMPro;
 
 public class addToStove : MonoBehaviour
 {
+    // audio 
+    public AudioSource audioSource;
+
     public GameObject objectToAdd;
-    private float removeTimer = 5f;
+    private float removeTimer = 0f;
 
     private GameObject gameFlowObject ; 
     private cookManagerGameFlow gameFlowInstance ;
@@ -15,6 +18,11 @@ public class addToStove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Get the AudioSource component from the GameObject
+        audioSource = GetComponent<AudioSource>();
+        // Set the audio to loop
+        audioSource.loop = true;
+
         gameFlowObject = GameObject.Find("GameObjectTimer"); 
         gameFlowInstance = gameFlowObject.GetComponent<cookManagerGameFlow>();
 
@@ -54,6 +62,11 @@ public class addToStove : MonoBehaviour
                 cookManagerGameFlow.stoves[i] = newObject;
                 Debug.Log("Stove Number taken: " + i);
                 found = 1;
+
+                // play sound
+                audioSource.Play();
+                cookManagerGameFlow.cooking = cookManagerGameFlow.cooking + 1; 
+
                 break;
             }
         }
@@ -85,6 +98,10 @@ public class addToStove : MonoBehaviour
             cookManagerGameFlow.stoves[0] = null;
             cookManagerGameFlow.cookedPatties = cookManagerGameFlow.cookedPatties + 1;
             StopTimer(0);
+
+            cookManagerGameFlow.cooking = cookManagerGameFlow.cooking - 1; 
+            checkStop();
+
             Debug.Log("cooked patties: " + cookManagerGameFlow.cookedPatties);
         }
         else if (cookManagerGameFlow.canRemove[1] == true && stoveIndex == 2 && cookManagerGameFlow.stoves[1] != null)
@@ -93,6 +110,10 @@ public class addToStove : MonoBehaviour
             cookManagerGameFlow.stoves[1] = null;
             cookManagerGameFlow.cookedPatties = cookManagerGameFlow.cookedPatties + 1;
             StopTimer(1);
+            
+            cookManagerGameFlow.cooking = cookManagerGameFlow.cooking - 1; 
+            checkStop();
+
             Debug.Log("cooked patties: " + cookManagerGameFlow.cookedPatties);
         }
         else if (cookManagerGameFlow.canRemove[2] == true && stoveIndex == 3 && cookManagerGameFlow.stoves[2] != null)
@@ -101,6 +122,10 @@ public class addToStove : MonoBehaviour
             cookManagerGameFlow.stoves[2] = null;
             cookManagerGameFlow.cookedPatties = cookManagerGameFlow.cookedPatties + 1;
             StopTimer(2);
+            
+            cookManagerGameFlow.cooking = cookManagerGameFlow.cooking - 1; 
+            checkStop();
+
             Debug.Log("cooked patties: " + cookManagerGameFlow.cookedPatties);
         }
         else if (cookManagerGameFlow.canRemove[3] == true && stoveIndex == 4 && cookManagerGameFlow.stoves[3] != null)
@@ -109,6 +134,10 @@ public class addToStove : MonoBehaviour
             cookManagerGameFlow.stoves[3] = null;
             cookManagerGameFlow.cookedPatties = cookManagerGameFlow.cookedPatties + 1;
             StopTimer(3);
+            
+            cookManagerGameFlow.cooking = cookManagerGameFlow.cooking - 1; 
+            checkStop();
+
             Debug.Log("cooked patties: " + cookManagerGameFlow.cookedPatties);
         }
 
@@ -137,5 +166,11 @@ public class addToStove : MonoBehaviour
         int minutes = Mathf.FloorToInt(timeInSeconds / 60);
         int seconds = Mathf.FloorToInt(timeInSeconds % 60);
         return string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
+    void checkStop() {
+        if (cookManagerGameFlow.cooking <= 0) {
+            audioSource.Stop(); // stop sound
+        }
     }
 }

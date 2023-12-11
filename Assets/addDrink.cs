@@ -29,8 +29,7 @@ public class addDrink : MonoBehaviour
         newObject.SetActive(true); // spawn object above tray 
         cookManagerGameFlow.currDrink = newObject;
 
-        // gameFlow.plateValue[gameFlow.idx] = foodValue;
-        // gameFlow.idx = gameFlow.idx + 1;
-        // Debug.Log("Array Contents: " + string.Join(", ", gameFlow.plateValue));
+        gameFlow.plateValue[10] = foodValue;
+        Debug.Log("Array Contents: " + string.Join(", ", gameFlow.plateValue));
     }
 }

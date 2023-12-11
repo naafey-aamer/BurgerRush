@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657832, g: 0.49641222, b: 0.57481664, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToAdd: {fileID: 26258884}
-  foodValue: 15
+  foodValue: -7
 --- !u!23 &26258887
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -585,7 +585,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToAdd: {fileID: 60474999}
-  foodValue: 14
+  foodValue: -4
 --- !u!1 &122366485
 GameObject:
   m_ObjectHideFlags: 0
@@ -779,6 +779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26868e7b08c4d49aeb29aa5257b09f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   objectToAdd: {fileID: 246701306}
   foodValue: 2
 --- !u!65 &246701309
@@ -900,6 +901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26868e7b08c4d49aeb29aa5257b09f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   objectToAdd: {fileID: 294340664}
   foodValue: 5
 --- !u!65 &294340666
@@ -1113,7 +1115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToAdd: {fileID: 384946836}
-  foodValue: 19
+  foodValue: -5
 --- !u!1 &429915009
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,6 +1484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26868e7b08c4d49aeb29aa5257b09f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   objectToAdd: {fileID: 475316652}
   foodValue: 3
 --- !u!65 &475316654
@@ -1630,6 +1633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26868e7b08c4d49aeb29aa5257b09f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   objectToAdd: {fileID: 532090620}
   foodValue: 10
 --- !u!65 &532090622
@@ -2020,6 +2024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26868e7b08c4d49aeb29aa5257b09f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   objectToAdd: {fileID: 579991328}
   foodValue: 3
 --- !u!65 &579991331
@@ -2407,6 +2412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26868e7b08c4d49aeb29aa5257b09f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   objectToAdd: {fileID: 616373071}
   foodValue: 6
 --- !u!65 &616373073
@@ -2555,6 +2561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26868e7b08c4d49aeb29aa5257b09f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   objectToAdd: {fileID: 634708555}
   foodValue: 1
 --- !u!65 &634708557
@@ -2861,7 +2868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToAdd: {fileID: 712822349}
-  foodValue: 12
+  foodValue: -2
 --- !u!1 &723341039
 GameObject:
   m_ObjectHideFlags: 0
@@ -3163,6 +3170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26868e7b08c4d49aeb29aa5257b09f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   objectToAdd: {fileID: 783502081}
   foodValue: 9
 --- !u!65 &783502083
@@ -3443,7 +3451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToAdd: {fileID: 788243309}
-  foodValue: 18
+  foodValue: -10
 --- !u!23 &788243311
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3542,6 +3550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26868e7b08c4d49aeb29aa5257b09f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   objectToAdd: {fileID: 824766032}
   foodValue: 8
 --- !u!54 &824766034
@@ -3689,7 +3698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToAdd: {fileID: 842269673}
-  foodValue: 20
+  foodValue: -6
 --- !u!23 &842269675
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3789,6 +3798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26868e7b08c4d49aeb29aa5257b09f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   objectToAdd: {fileID: 885052065}
   foodValue: 4
 --- !u!65 &885052067
@@ -4496,6 +4506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26868e7b08c4d49aeb29aa5257b09f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   objectToAdd: {fileID: 1149056411}
   foodValue: 7
 --- !u!65 &1149056413
@@ -4671,6 +4682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26868e7b08c4d49aeb29aa5257b09f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   objectToAdd: {fileID: 1186774274}
   foodValue: 1
 --- !u!65 &1186774277
@@ -5186,7 +5198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToAdd: {fileID: 1253352884}
-  foodValue: 16
+  foodValue: -8
 --- !u!23 &1253352887
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5492,7 +5504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToAdd: {fileID: 1539690266}
-  foodValue: 17
+  foodValue: -9
 --- !u!23 &1539690269
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5575,7 +5587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToAdd: {fileID: 1541345369}
-  foodValue: 11
+  foodValue: -1
 --- !u!23 &1541345371
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5941,6 +5953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26868e7b08c4d49aeb29aa5257b09f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   objectToAdd: {fileID: 1645761390}
   foodValue: 2
 --- !u!65 &1645761392
@@ -6477,7 +6490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToAdd: {fileID: 1800904702}
-  foodValue: 13
+  foodValue: -3
 --- !u!1 &1825032211
 GameObject:
   m_ObjectHideFlags: 0
