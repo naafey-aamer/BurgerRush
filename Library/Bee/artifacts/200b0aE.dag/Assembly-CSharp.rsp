@@ -359,11 +359,19 @@
 "Assets/addFries.cs"
 "Assets/addToPlate.cs"
 "Assets/addToStove.cs"
+"Assets/assss.cs"
+"Assets/buttonActivator.cs"
+"Assets/buttonActivatorWin.cs"
 "Assets/change_scenes.cs"
+"Assets/ClickableObject2.cs"
+"Assets/ClickableObject3.cs"
+"Assets/ClickableObject4.cs"
 "Assets/cookManagerGameFlow.cs"
-"Assets/cust_interact.cs"
+"Assets/customer_track.cs"
 "Assets/cust_movement.cs"
 "Assets/cust_spawn.cs"
+"Assets/decision.cs"
+"Assets/decision2.cs"
 "Assets/gameFlow.cs"
 "Assets/manager.cs"
 "Assets/orderdisplay.cs"
@@ -381,6 +389,7 @@
 "Assets/SlimUI/Modern Menu 1/Scripts/ThemeEditor/ThemedUIData.cs"
 "Assets/SlimUI/Modern Menu 1/Scripts/ThemeEditor/ThemedUIElement.cs"
 "Assets/takeOrder.cs"
+"Assets/winCondition.cs"
 -langversion:9.0
 
 /deterministic

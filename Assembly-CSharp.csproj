@@ -56,12 +56,19 @@
   <ItemGroup>
     <Compile Include="Assets/cust_spawn.cs" />
     <Compile Include="Assets/manager.cs" />
+    <Compile Include="Assets/ClickableObject2.cs" />
     <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/Managers/UIMenuManager.cs" />
     <Compile Include="Assets/addDip.cs" />
     <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/Misc/ResetDemo.cs" />
     <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/ThemeEditor/ThemedUIElement.cs" />
+    <Compile Include="Assets/buttonActivatorWin.cs" />
+    <Compile Include="Assets/buttonActivator.cs" />
+    <Compile Include="Assets/ClickableObject3.cs" />
     <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/Misc/ExtraLinks.cs" />
+    <Compile Include="Assets/decision.cs" />
     <Compile Include="Assets/addToPlate.cs" />
+    <Compile Include="Assets/assss.cs" />
+    <Compile Include="Assets/decision2.cs" />
     <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/Managers/UISettingsManager.cs" />
     <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/Audio/CheckSFXVolume.cs" />
     <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/ThemeEditor/ThemedUI.cs" />
@@ -72,12 +79,14 @@
     <Compile Include="Assets/change_scenes.cs" />
     <Compile Include="Assets/takeOrder.cs" />
     <Compile Include="Assets/sceneTransition.cs" />
+    <Compile Include="Assets/winCondition.cs" />
+    <Compile Include="Assets/ClickableObject4.cs" />
     <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/ThemeEditor/ThemedUIData.cs" />
     <Compile Include="Assets/gameFlow.cs" />
+    <Compile Include="Assets/customer_track.cs" />
     <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/Audio/CheckMusicVolume.cs" />
     <Compile Include="Assets/activate_chef.cs" />
     <Compile Include="Assets/addDrink.cs" />
-    <Compile Include="Assets/cust_interact.cs" />
     <Compile Include="Assets/orderdisplay.cs" />
     <Compile Include="Assets/addToStove.cs" />
     <Compile Include="Assets/orderFlow.cs" />

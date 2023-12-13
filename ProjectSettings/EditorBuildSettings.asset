@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Rating.unity
     guid: 38ad4b3c9cfeadd5ca09e6e8797675bb
+  - enabled: 1
+    path: Assets/Scenes/menu.unity
+    guid: b5d6f9d255c984d7da6372f4ed1f5a06
+  - enabled: 1
+    path: Assets/Scenes/YouLose.unity
+    guid: 8216a9ed720ed419399198e2856abbef
+  - enabled: 1
+    path: Assets/Scenes/YouWin.unity
+    guid: d77c86c94cad7408c925770aaed314bc
   m_configObjects: {}

@@ -18,6 +18,18 @@ public class manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Access the OrderDisplay instance and update the order display
+        OrderDisplay o = OrderDisplay.Instance;
+        if (o != null)
+        {
+            o.UpdateOrderDisplay();
+        }
+        else
+        {
+            Debug.LogError("OrderDisplay Instance not found!");
+        }
+
+        
         for (int i = 0; i < gameFlow.idx; i++ ) {
             if (gameFlow.plateValue[i] == 1) {
                 GameObject newObject = Instantiate(bottom_bun, new Vector3(0f,0.15f,0f), Quaternion.identity);

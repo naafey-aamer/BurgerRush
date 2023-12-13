@@ -1,32 +1,27 @@
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class SampleOrderManager : MonoBehaviour
 {
-    public OrderGenerator orderGenerator; // Reference to the OrderGenerator script
-    public OrderDisplay orderDisplay; // Reference to the OrderDisplay script
-
-    private bool orderGenerated = false; // Flag to track if the order has been generated
-
-    // Method to generate and display an order
-    public void GenerateAndDisplayOrder(int numberOfComponents)
-    {
-        GameObject[] randomOrder = orderGenerator.GenerateRandomOrder(numberOfComponents);
-        orderDisplay.UpdateOrderDisplay(randomOrder);
-    }
-
+    public static int[] orderValue = new int[] { 1, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0};
+    
     private void Start()
     {
-        int numberOfComponents = 5; // Change this value to the desired number of components for your game
-        GenerateAndDisplayOrder(numberOfComponents);
-        orderGenerated = true; // Set the flag to indicate order generation
-    }
+        // Generate a random order
+        OrderGenerator a = new OrderGenerator();
+        int[] randomOrder = a.GenerateRandomOrder(13);
 
-    private void Update()
-    {
-        // Check if the order has already been generated, if not, don't update
-        if (!orderGenerated)
-            return;
+        // Assign the generated order to the static orderValue in OrderDisplay
+        orderValue = randomOrder;
 
-        // Your other update logic goes here...
+        // Access the OrderDisplay instance and update the order display
+        OrderDisplay o = OrderDisplay.Instance;
+        if (o != null)
+        {
+            o.UpdateOrderDisplay();
+        }
+        else
+        {
+            Debug.LogError("OrderDisplay Instance not found!");
+        }
     }
 }

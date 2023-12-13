@@ -56,13 +56,13 @@ public class CustomerBehavior : MonoBehaviour
         MoveToCounter();
 
 
-        orderButton.onClick.AddListener(() =>
-        {
-            if (this == activeCustomer)
-            {
-                OnOrderReceived();
-            }
-        });
+        // orderButton.onClick.AddListener(() =>
+        // {
+        //     if (this == activeCustomer)
+        //     {
+        //         OnOrderReceived();
+        //     }
+        // });
     }
 
     private void Update()
@@ -79,7 +79,6 @@ public class CustomerBehavior : MonoBehaviour
         else
         {
             orderButton.gameObject.SetActive(false); // Hide the button
-            MoveToWaitQueue();
         }
     }
 
@@ -98,22 +97,22 @@ public class CustomerBehavior : MonoBehaviour
         }
     }
 
-    private void MoveToWaitQueue()
-    {
-        float step = moveSpeed * Time.deltaTime;
-        transform.position = Vector3.MoveTowards(transform.position, waitQueuePosition, step);
-    }
+    // private void MoveToWaitQueue()
+    // {
+    //     float step = moveSpeed * Time.deltaTime;
+    //     transform.position = Vector3.MoveTowards(transform.position, waitQueuePosition, step);
+    // }
 
-private void OnOrderReceived()
-{
-    hasOrdered = true;
+    // private void OnOrderReceived()
+    // {
+    //     hasOrdered = true;
 
-    // Execute this block for the first customer after the delay
-    int numberOfComponents = 4; // Adjust this to your desired number of components
-    GameObject[] randomOrder = orderGenerator.GenerateRandomOrder(numberOfComponents);
-    orderDisplay.UpdateOrderDisplay(randomOrder);
+    //     // Execute this block for the first customer after the delay
+    //     int numberOfComponents = 4; // Adjust this to your desired number of components
+    //     GameObject[] randomOrder = orderGenerator.GenerateRandomOrder(numberOfComponents);
+    //     orderDisplay.UpdateOrderDisplay(randomOrder);
 
-    MoveToWaitQueue();
-}
+    //     MoveToWaitQueue();
+    // }
 
 }

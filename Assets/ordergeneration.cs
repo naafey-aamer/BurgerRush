@@ -1,25 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-// 2d array public static array. len will be the max number of customers for that level
-// reset array to zero whenen new level starts
-// size 14
-// order_value
-// 
 
 public class OrderGenerator : MonoBehaviour
 {
-    public GameObject[] menuItems; // Assign the placeholder blocks in the Unity Inspector
 
-    public GameObject[] GenerateRandomOrder(int numberOfComponents)
+    // public GameObject[] menuItems; // Assign the placeholder blocks in the Unity Inspector
+
+    public int[] GenerateRandomOrder(int numberOfComponents)
     {
-        GameObject[] order = new GameObject[numberOfComponents];
+        int[] order = new int[numberOfComponents];
 
-        for (int i = 0; i < numberOfComponents; i++)
+        // Assigning static values
+        order[0] = SampleOrderManager.orderValue[0];
+        order[9] = SampleOrderManager.orderValue[9];
+
+        // Assigning random values within specified ranges
+        for (int i = 1; i <= 8; i++)
         {
-            int randomIndex = Random.Range(0, menuItems.Length);
-            order[i] = menuItems[randomIndex];
+            order[i] = Random.Range(2, 10);
         }
+
+        order[10] = Random.Range(-4, 0); // Values between -4 and -1
+        order[11] = (Random.Range(0, 2) == 0) ? -11 : -12; // Either -11 or -12
+        order[12] = Random.Range(-10, -6); // Values between -10 and -7
 
         return order;
     }

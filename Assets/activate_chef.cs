@@ -6,6 +6,10 @@ using System.Collections;
 public class ActivateAnimationOnCondition : MonoBehaviour
 {
     public Animator customerAnimator;
+
+    public Animator customerAnimator1;
+
+    public Animator customerAnimator2;
     public Animation animationComponent; // Assign the Animation component reference in the Inspector
     public string animationName; // Name of the animation clip you want to play
 
@@ -50,14 +54,40 @@ public class ActivateAnimationOnCondition : MonoBehaviour
     {
         // Access the name from the AnimatorStateInfo object
         Debug.Log(customerAnimator.name + "");
-        // Check if the Animator is in a specific animation state
-        if (customerAnimator.GetBool("take_order") && customerAnimator.GetBool("reached") && customerAnimator.GetBool("taken_order"))
+        if (customer_track.character_name == null)
         {
-            return true;
+            if (customerAnimator.GetBool("take_order") && customerAnimator.GetBool("reached") && customerAnimator.GetBool("taken_order"))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
+
+        if (customer_track.character_name == "mich")
+        {
+            if (customerAnimator1.GetBool("take_order") && customerAnimator1.GetBool("reached") && customerAnimator1.GetBool("taken_order"))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         else
         {
-            return false;
+            if (customerAnimator2.GetBool("take_order") && customerAnimator2.GetBool("reached") && customerAnimator2.GetBool("taken_order"))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 
