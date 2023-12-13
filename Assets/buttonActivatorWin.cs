@@ -24,7 +24,7 @@ public class buttonActivatorWin : MonoBehaviour
 
     bool CheckCondition()
     {
-        if (gameFlow.numOfCustomers >= 3 && gameFlow.winCondition == true) {
+        if (gameFlow.numOfCustomers >= 9 && gameFlow.winCondition == true) {
             return true;
         }
         else {
