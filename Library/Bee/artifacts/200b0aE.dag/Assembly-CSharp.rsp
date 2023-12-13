@@ -116,6 +116,7 @@
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
+-define:UNITY_POST_PROCESSING_STACK_V2
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.CoreModule.dll"
@@ -328,6 +329,8 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Unity.Postprocessing.Editor.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Unity.Postprocessing.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.Rider.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.ref.dll"
@@ -368,6 +371,15 @@
 "Assets/ordergeneration.cs"
 "Assets/removeButtonHandler.cs"
 "Assets/sceneTransition.cs"
+"Assets/SlimUI/Modern Menu 1/Scripts/Audio/CheckMusicVolume.cs"
+"Assets/SlimUI/Modern Menu 1/Scripts/Audio/CheckSFXVolume.cs"
+"Assets/SlimUI/Modern Menu 1/Scripts/Managers/UIMenuManager.cs"
+"Assets/SlimUI/Modern Menu 1/Scripts/Managers/UISettingsManager.cs"
+"Assets/SlimUI/Modern Menu 1/Scripts/Misc/ExtraLinks.cs"
+"Assets/SlimUI/Modern Menu 1/Scripts/Misc/ResetDemo.cs"
+"Assets/SlimUI/Modern Menu 1/Scripts/ThemeEditor/ThemedUI.cs"
+"Assets/SlimUI/Modern Menu 1/Scripts/ThemeEditor/ThemedUIData.cs"
+"Assets/SlimUI/Modern Menu 1/Scripts/ThemeEditor/ThemedUIElement.cs"
 "Assets/takeOrder.cs"
 -langversion:9.0
 
