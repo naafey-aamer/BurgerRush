@@ -1,5 +1,5 @@
 # BurgerRush
-### Project for CS452 - Computer Graphics
+### Inspired By Papa's Burgeria (Flipline Studios)
 
 ![image](https://github.com/naafey-aamer/burger-rush/blob/main/Assets/home.png)
 ## Overview
