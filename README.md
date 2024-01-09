@@ -14,6 +14,7 @@ Take orders, grill patties to perfection, build your burger with love and care, 
 **Grill Station**: Grill patties to perfection for ultimate customer satisfaction. <br>
 **Build Station**: Build your burger by following the order chit.  <br>
 **Tray Station**: Add drinks, sides, and dips as per the order. <br>
+**Customer Satisfaction**: If the order was made timely and accurately, you progress, else its game over. <br>
 
 ### Made with Unity 
 <img src="https://seeklogo.com/images/U/unity-logo-988A22E703-seeklogo.com.png" alt="image" width="200"> <br>
