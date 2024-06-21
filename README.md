@@ -18,7 +18,7 @@ Take orders, grill patties to perfection, build your burger with love and care, 
 
 ### Made with Unity 
 <img src="https://seeklogo.com/images/U/unity-logo-988A22E703-seeklogo.com.png" alt="image" width="200"> <br>
-Burger Rush's immersive 3D world and experience was meticulously crafted entirely in Unity.
+Burger Rush's immersive 3D world and experience was made in Unity.
 
 ### How do I play?
 To play Burger Rush, simply clone the repository and open it in Unity.
